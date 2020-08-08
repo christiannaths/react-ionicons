@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { pascalCase } from "pascal-case";
-import { paramCase } from "param-case";
-import * as Icons from "./svgs";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { pascalCase } from 'pascal-case';
+import { paramCase } from 'param-case';
+import * as Icons from './svgs';
 
-function classNames({ name, className = "" }) {
-  const base = "icon ion-icon";
+function classNames({ name, className = '' }) {
+  const base = 'icon ion-icon';
   return `${base} ${name} ${className}`;
 }
 
@@ -21,8 +21,7 @@ IonIcon.propTypes = {
 };
 
 IonIcon.defaultProps = {
-  name: "",
+  name: '',
 };
 
-export { IonIcon };
 export default IonIcon;

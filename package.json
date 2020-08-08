@@ -3,8 +3,13 @@
   "version": "3.1.4",
   "description": "A React SVG ionicon component",
   "author": "zamarrowski",
+  "contributors": [
+    "zamarrowski",
+    "christiannaths"
+  ],
   "license": "ISC",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "lib/esm/index.js",
   "scripts": {
     "start": "rollup -c --watch",
     "build": "rollup -c"
@@ -19,9 +24,8 @@
     "@rollup/plugin-babel": "^5.1.0",
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@svgr/rollup": "^5.4.0",
-    "babel-plugin-import-directory": "^1.1.0",
     "babel-plugin-wildcard": "^6.0.0",
-    "create-index": "^2.6.0",
+    "globby": "^11.0.1",
     "pascal-case": "^3.1.1",
     "rollup": "^2.23.0"
   },

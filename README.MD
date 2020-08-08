@@ -1,10 +1,13 @@
-# A React Ionicon Component
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/zamarrowski/react-ionicons/master/ionicons-logo.png">
+  <svg width="8em" height="8em" viewBox="0 0 32 32" fill="#61dbfb">
+    <circle opacity="0.2" cx="16" cy="16" r="16"></circle>
+    <circle opacity="0.4" cx="16" cy="16" r="11"></circle>
+    <circle opacity="1" cx="16" cy="16" r="6"></circle>
+    <circle fill="#20232a" cx="23.5" cy="8.5" r="2"></circle>
+  </svg>
 </p>
 
-View page: https://zamarrowski.github.io/react-ionicons/
+# IonIcons for React
 
 ## Install
 
@@ -12,39 +15,34 @@ View page: https://zamarrowski.github.io/react-ionicons/
 $ npm install --save react-ionicons
 ```
 
+```sh
+$ yarn add react-ionicons
+```
+
 ## Usage
 
 ```js
-import React from 'react'
-import { render } from 'react-dom'
-import LogoNodejs from 'react-ionicons/lib/LogoNodejs'
+import React from "react";
+import { render } from "react-dom";
+import IonIcon from "react-ionicons";
 
-render(
-  <LogoNodejs onClick={() => alert('Hi!')} fontSize="60px" color="#43853d" />
-, document.getElementById('container'))
+render(<IonIcon name="logo-nodejs" />, document.getElementById("root"));
 ```
 
 ### Browserify
 
-[`browserify`](https://npmjs.com/packages/browserify) is supported, but you have to install [`browserify-css@^0.12.0`](https://npmjs.com/packages/browserify-css) manually.
+[`browserify`](https://npmjs.com/packages/browserify) support is coming soon...
 
 ## Features
 
-* No dependencies, just React.
-* SVG Icons.
-* Simple API.
-* Animations.
-* Customizable.
-* Support to Create React App.
+- No dependencies.
+- SVG icons.
+- Simple API.
+- Customizable.
+- Supports Create React App.
 
 ## API:
 
-| Param | Type | Description | Example |
-| --- | --- | --- | --- |
-| `className` | `String` | Name of a CSS class | `className="myClass"` |
-| `fontSize` | `String` | Icon size. Allow all units (px, em, %, pt...). | `fontSize="35px"` |
-| `color` | `String` | Icon color. Allow string (blue, red, cyan...), rgb, rgba and hexadecimal colors. | `color="#C9C9C9"` |
-| `rotate` | `Boolean` | Apply rotate animation to icon | `rotate={true}` |
-| `shake` | `Boolean` | Apply shake animation to icon | `shake={true}` |
-| `beat` | `Boolean` | Apply beat animation to icon | `beat={true}` |
-| `onClick` | `Function` | Pass a function to execute onClick | `onClick={() => console.log('Hi!')}` |
+| Param  | Type     | Description                             | Default   | Example                   |
+| ------ | -------- | --------------------------------------- | --------- | ------------------------- |
+| `name` | `String` | The name of the IonIcon you wish to use | `name=""` | `name="airplane-outline"` |
